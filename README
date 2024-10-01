@@ -1,0 +1,2 @@
+This repository acts as an access point into the database.
+It uses a MongoDB database to store the names.
