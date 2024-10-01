@@ -16,7 +16,7 @@ const ItemSchema = new mongoose.Schema({
     quantity: { type: Number, default: 1 }, // Set default quantity to 1
 });
 
-const Item = mongoose.model('Item', ItemSchema);
+const Item = mongoose.model('Item', ItemSchema, 'names');
 
 // Get all items or filter by name
 app.get('/items', async (req, res) => {
